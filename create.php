@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>AdSpot - The Classified Web App</title>
+    <title>Rent_a_lot</title>
     <!--========================================
     Meta
     ===========================================-->
@@ -58,7 +58,7 @@
                 <div class="inner">
                     <div class="app-logo">
                         <button class="mobile-control mob-menu-trigger"><i class="adicon-hamburger"></i></button>
-                        <a href="index.html"><img src="assets/img/basic/logo.png" alt="adspot"></a>
+                        <a href="index.php"><img src="assets/img/basic/logo.png" alt="adspot"></a>
                     </div>
                     <ul class="quick-actions">
                         <li><a class="modal-trigger" href="#signInModal">Login</a></li>
@@ -93,7 +93,7 @@
                                             <td><strong>885.00 USD</strong></td>
                                         </tr>
                                     </table>
-                                    <a href="cart.html" class="btn btn-transparent block-element">View Cart</a>
+                                    <a href="cart.php" class="btn btn-transparent block-element">View Cart</a>
                                 </div>
                             </div>
                         </li>
@@ -221,19 +221,19 @@
             <nav class="slide-nav-list">
                 <nav class="slide-nav-list">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="create.html">Create Ad</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="dashboard.php">Dashboard</a></li>
+                        <li><a href="create.php">Create Ad</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="terms.php">Terms</a></li>
                         <li class="parent">
                             <a  href="javascript:return;">Shop</a>
                             <ul>
-                                <li><a href="listing.html">Products</a></li>
-                                <li><a href="shop-index.html">Top Deals</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="listing.php">Products</a></li>
+                                <li><a href="shop-index.php">Top Deals</a></li>
+                                <li><a href="cart.php">Cart</a></li>
+                                <li><a href="checkout.php">Checkout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -248,14 +248,14 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="create.html">Create an Ad</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="listing.html">Products</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="shop-index.html">Top Deals</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="create.php">Create an Ad</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="listing.php">Products</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
+                    <li><a href="shop-index.php">Top Deals</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+                    <li><a href="checkout.php">Checkout</a></li>
                 </ul>
             </div>
         </div>
@@ -306,7 +306,6 @@
                                                                     <li><a href="#">Motorcycles</a></li>
                                                                     <li><a href="#">Scooters</a></li>
                                                                     <li><a href="#">Bicycles</a></li>
-                                                                    <li><a href="#">Commercial Vehicles</a></li>
                                                                     <li><a href="#">Spare Parts &amp; Accessories</a></li>
                                                                     <li><a href="#">Other Vehicles</a></li>
                                                                 </ul>
@@ -314,9 +313,12 @@
                                                             <li><a href="#"><i class="adicon-tablet"></i>Mobiles</a>
                                                                 <ul>
                                                                     <li><a href="#">Iphone</a></li>
-                                                                    <li><a href="#">Android</a></li>
-                                                                    <li><a href="#">Q mobile</a></li>
-                                                                    <li><a href="#">Black berry</a></li>
+                                                                    <li><a href="#">Samsung</a></li>
+                                                                    <li><a href="#">Tecno</a></li>
+                                                                    <li><a href="#">Infinix</a></li>
+                                                                    <li><a href="#">Itel</a></li>
+                                                                    <li><a href="#">Nokia</a></li>
+                                                                    <li><a href="#">HTC</a></li>
                                                                 </ul>
                                                             </li>
                                                             <li><a href="#"><i class="adicon-tv"></i>Electronics</a>
@@ -327,15 +329,33 @@
                                                                     <li><a href="#">Computers and Laptops</a></li>
                                                                 </ul>
                                                             </li>
-                                                            <li><a href="#"><i class="adicon-sofa"></i>Furniture</a></li>
-                                                            <li><a href="#"><i class="adicon-briefcase"></i>Jobs</a></li>
-                                                            <li><a href="#"><i class="adicon-buildings"></i>Real Estate</a></li>
-                                                            <li><a href="#"><i class="adicon-bell"></i>Services</a></li>
-                                                            <li><a href="#"><i class="adicon-hat"></i>Education</a></li>
-                                                            <li><a href="#"><i class="adicon-dog"></i>Animals</a></li>
-                                                            <li><a href="#"><i class="adicon-heal"></i>Fashion</a></li>
-                                                            <li><a href="#"><i class="adicon-smile"></i>Baby Products</a></li>
-                                                            <li><a href="#"><i class="adicon-hearts"></i>Matrimony</a></li>
+                                                            <li><a href="#"><i class="adicon-sofa"></i>Furniture</a>
+                                                                <ul>
+                                                                    <li><a href="#">Chairs</a></li>
+                                                                    <li><a href="#">Tables</a></li>
+                                                                    <li><a href="#">Bed</a></li>
+                                                                    <li><a href="#">Desk</a></li>
+                                                                    <li><a href="#">Cupboard</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#"><i class="adicon-heal"></i>Fashion</a>
+                                                                <ul>
+                                                                    <li><a href="">Clothes</a></li>
+                                                                    <li><a href="">Shoes</a></li>
+                                                                    <li><a href="">Bags</a></li>
+                                                                    <li><a href="">Accessories</a></li>
+                                                                    <li><a href="">Hair</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#"><i class="adicon-smile"></i>Baby products</a>
+                                                                <ul>
+                                                                    <li><a href="">Stollers</a></li>
+                                                                    <li><a href="">Feeding</a></li>
+                                                                    <li><a href="">baby bed</a></li>
+                                                                    <li><a href="">Car seats</a></li>
+                                                                    <li><a href="">Crib</a></li>
+                                                                </ul>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>

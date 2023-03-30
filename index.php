@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
 
-    <title>AdSpot - The Classified Web App</title>
-    <!--========================================
-    Meta
-    ===========================================-->
+    <title>Rent_a_lot</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,8 +34,8 @@
     <meta name="theme-color" content="#55acee">
 
     <!--========================================
-     CSS
-     ===========================================-->
+    CSS
+    ===========================================-->
     <!--3rd party plugins-->
     <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/lib/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
@@ -48,7 +46,6 @@
     <!--put your custom css on the file below-->
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 
-
 </head>
 <body>
     <div class="web-app">
@@ -58,7 +55,7 @@
                 <div class="inner">
                     <div class="app-logo">
                         <button class="mobile-control mob-menu-trigger"><i class="adicon-hamburger"></i></button>
-                        <a href="index.html"><img src="assets/img/basic/logo.png" alt="adspot"></a>
+                        <a href="index.php"><img src="assets/img/basic/logo.png" alt="adspot"></a>
                     </div>
                     <ul class="quick-actions">
                         <li><a class="modal-trigger" href="#signInModal">Login</a></li>
@@ -93,14 +90,14 @@
                                             <td><strong>885.00 USD</strong></td>
                                         </tr>
                                     </table>
-                                    <a href="cart.html" class="btn btn-transparent block-element">View Cart</a>
+                                    <a href="cart.php" class="btn btn-transparent block-element">View Cart</a>
                                 </div>
                             </div>
                         </li>
                         <li><a class="nav-trigger" href="#"><i class="fa fa-navicon"></i></a></li>
                     </ul>
                     <div class="clearfix">
-                        <a href="create.html" class="btn btn-green pull-right quick-post">Post your ad</a>
+                        <a href="create.php" class="btn btn-green pull-right quick-post">Post your ad</a>
                         <div class="pull-right search-filters">
                             <div class="mega-dropdown pull-left">
                                 <button>Select City</button>
@@ -193,7 +190,7 @@
                                                     <li><a href="">Hair</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#"><i class="adicon-smile"></i>Fashion</a>
+                                            <li><a href="#"><i class="adicon-smile"></i>Baby products</a>
                                                 <ul>
                                                     <li><a href="">Stollers</a></li>
                                                     <li><a href="">Feeding</a></li>
@@ -220,12 +217,12 @@
             <a class="close-sliding-nav" href="#">Close nav</a>
             <nav class="slide-nav-list">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="create.html">Create Ad</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="create.php">Create Ad</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="terms.php">Terms</a></li>
                     <li class="parent">
                         <a  href="javascript:return;">Shop</a>
                         <ul>
@@ -240,144 +237,134 @@
         </div>
         <div class="mobile-menu-wrap">
             <a href="#" class="closeMobilMenu">close the mobile menu</a>
-            <div class="mobile-menu">
+            <nav class="mobile-menu">
                 <div class="search-widget">
                     <input type="text" placeholder="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="create.html">Create an Ad</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="listing.html">Products</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="shop-index.html">Top Deals</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="create.php">Create an Ad</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="listing.php">Products</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
+                    <li><a href="shop-index.php">Top Deals</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+                    <li><a href="checkout.php">Checkout</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
 
         <div class="app-canvas">
             <div class="container">
-                <div class="breadcrumb">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li>About us</li>
-                    </ul>
+                <header class="heading big text-center">
+                    <h1>World’s <strong>Biggest</strong> Classified Marketplace</h1>
+                    <p class="text-uppercase">rent anything</p>
+                </header>
+                <div class="cat-boxes">
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-car bg1"></div>
+                            <span>vehicles</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-tablet bg2"></div>
+                            <span>Mobiles</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-tv bg3"></div>
+                            <span>Electronics</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-sofa bg4"></div>
+                            <span>Furniture</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-briefcase bg5"></div>
+                            <span>catering equipments</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-buildings bg6"></div>
+                            <span>Repair tools</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-bell bg7"></div>
+                            <span>agriculture tools</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-hat bg8"></div>
+                            <span>books</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-dog bg9"></div>
+                            <span>sports</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-heal bg10"></div>
+                            <span>fashion</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-smile bg11"></div>
+                            <span>baby products</span>
+                        </div>
+                    </a>
+                    <a href="listing.php" class="cat-box">
+                        <div class="inner">
+                            <div class="adicon-hearts bg12"></div>
+                            <span>beauty</span>
+                        </div>
+                    </a>
                 </div>
-
-                <div class="cart-area">
+            </div>
+            <div class="section">
+                <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-md-8">
-                            <div class="cart-items">
-                                <div class="cart-unit clearfix">
-                                    <div class="cart-item-info">
-                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-1.png" alt="dummy"></figure>
-                                        <h6>Apple Iphone 6S</h6>
-                                        <span>$206.90</span>
-                                    </div>
-                                    <div class="cart-item-actions">
-                                        <div class="quantity-control">
-                                            <input title="quantity control" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
-                                            <div class="qty-btns">
-                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
-                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
-                                            </div>
-                                        </div>
-                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
-                                    </div>
-                                </div>
-                                <div class="cart-unit clearfix">
-                                    <div class="cart-item-info">
-                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-2.png" alt="dummy"></figure>
-                                        <h6>Apple Iphone 6S</h6>
-                                        <span>$206.90</span>
-                                    </div>
-                                    <div class="cart-item-actions">
-                                        <div class="quantity-control">
-                                            <input title="title here" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
-                                            <div class="qty-btns">
-                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
-                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
-                                            </div>
-                                        </div>
-                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
-                                    </div>
-                                </div>
-                                <div class="cart-unit clearfix">
-                                    <div class="cart-item-info">
-                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-3.png" alt="dummy"></figure>
-                                        <h6>Apple Iphone 6S</h6>
-                                        <span>$206.90</span>
-                                    </div>
-                                    <div class="cart-item-actions">
-                                        <div class="quantity-control">
-                                            <input title="title here" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
-                                            <div class="qty-btns">
-                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
-                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
-                                            </div>
-                                        </div>
-                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
-                                    </div>
-                                </div>
-                                <div class="cart-unit clearfix">
-                                    <div class="cart-item-info">
-                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-4.png" alt="dummy"></figure>
-                                        <h6>Apple Iphone 6S</h6>
-                                        <span>$206.90</span>
-                                    </div>
-                                    <div class="cart-item-actions">
-                                        <div class="quantity-control">
-                                            <input title="title here" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
-                                            <div class="qty-btns">
-                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
-                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
-                                            </div>
-                                        </div>
-                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
-                                    </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="text-widget">
+                                <div class="inner">
+                                    <h4>About Us</h4>
+                                    <p>As a leading entity in oline rental services. We thrive to ensure the satisfaction of all parties.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-4">
-                            <div class="cart-summary">
-                                <div class="price-widget short-widget bg1">
-                                    <i class="adicon-dollar"></i>
-                                    <strong>$235.00</strong>
-                                    <span>Order Total</span>
-                                </div>
-                                <div class="cart-summary-table">
-                                    <table>
-                                        <tr>
-                                            <td>Sub Total</td>
-                                            <td>$827.60</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sales Tax</td>
-                                            <td>19% Gross</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Discount</td>
-                                            <td>0%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shipping</td>
-                                            <td>Free</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="cart-summary-actions clearfix">
-                                    <a href="#" class="btn btn-transparent">Continue</a>
-                                    <a href="checkout.html" class="btn btn-green">Checkout</a>
+                            <div class="text-widget">
+                                <div class="inner">
+                                    <h4>Rent Safely</h4>
+                                    <p>We guarantee the safety of your rented items.</p>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="text-widget">
+                                <div class="inner">
+                                    <h4>How can we help</h4>
+                                    <p>You can lay any complains to our customers care services</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <footer class="doc-footer">
@@ -420,10 +407,9 @@
         </footer>
     </div>
 
-
     <!--======================================
-   Modals
-   =======================================-->
+    Modals
+    =======================================-->
     <div id="signInModal" class="modal-container">
         <a href="#" class="modal-overlay"> click to close modal</a>
         <div class="inner">
@@ -495,7 +481,7 @@
                             <a href="#">Forgot Password?</a>
                         </div>
                     </div>
-
+                    
                     <button class="btn btn-md btn-green block-element">Login Now</button>
                     <div class="login-cta text-center">
                         <p>Don't have an account?</p>
@@ -589,14 +575,11 @@
         </div>
     </div>
 
-
     <!--========================================
     Javascript
     ===========================================-->
     <script src="assets/lib/jquery/dist/jquery.min.js"></script>
-    <script src="assets/lib/slick-carousel/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
-
 </html>

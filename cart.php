@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>AdSpot - The Classified Web App</title>
+    <title>Rent_a_lot</title>
     <!--========================================
     Meta
     ===========================================-->
@@ -36,8 +36,8 @@
     <meta name="theme-color" content="#55acee">
 
     <!--========================================
-    CSS
-    ===========================================-->
+     CSS
+     ===========================================-->
     <!--3rd party plugins-->
     <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/lib/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
@@ -58,7 +58,7 @@
                 <div class="inner">
                     <div class="app-logo">
                         <button class="mobile-control mob-menu-trigger"><i class="adicon-hamburger"></i></button>
-                        <a href="index.html"><img src="assets/img/basic/logo.png" alt="adspot"></a>
+                        <a href="index.php"><img src="assets/img/basic/logo.png" alt="adspot"></a>
                     </div>
                     <ul class="quick-actions">
                         <li><a class="modal-trigger" href="#signInModal">Login</a></li>
@@ -93,14 +93,14 @@
                                             <td><strong>885.00 USD</strong></td>
                                         </tr>
                                     </table>
-                                    <a href="cart.html" class="btn btn-transparent block-element">View Cart</a>
+                                    <a href="cart.php" class="btn btn-transparent block-element">View Cart</a>
                                 </div>
                             </div>
                         </li>
                         <li><a class="nav-trigger" href="#"><i class="fa fa-navicon"></i></a></li>
                     </ul>
                     <div class="clearfix">
-                        <a href="create.html" class="btn btn-green pull-right quick-post">Post your ad</a>
+                        <a href="create.php" class="btn btn-green pull-right quick-post">Post your ad</a>
                         <div class="pull-right search-filters">
                             <div class="mega-dropdown pull-left">
                                 <button>Select City</button>
@@ -193,7 +193,7 @@
                                                     <li><a href="">Hair</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#"><i class="adicon-smile"></i>Fashion</a>
+                                            <li><a href="#"><i class="adicon-smile"></i>Baby products</a>
                                                 <ul>
                                                     <li><a href="">Stollers</a></li>
                                                     <li><a href="">Feeding</a></li>
@@ -220,19 +220,19 @@
             <a class="close-sliding-nav" href="#">Close nav</a>
             <nav class="slide-nav-list">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="create.html">Create Ad</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="create.php">Create Ad</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="terms.php">Terms</a></li>
                     <li class="parent">
                         <a  href="javascript:return;">Shop</a>
                         <ul>
-                            <li><a href="listing.html">Products</a></li>
-                            <li><a href="shop-index.html">Top Deals</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="listing.php">Products</a></li>
+                            <li><a href="shop-index.php">Top Deals</a></li>
+                            <li><a href="cart.php">Cart</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -246,274 +246,138 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="create.html">Create an Ad</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="listing.html">Products</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="shop-index.html">Top Deals</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="create.php">Create an Ad</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="listing.php">Products</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
+                    <li><a href="shop-index.php">Top Deals</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+                    <li><a href="checkout.php">Checkout</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="app-canvas">
-            <div class="banner-slider">
-                <div class="slick-carousel slick-shop-banner" data-slides-scroll="1" data-nav="false" data-dots="true" data-fade="true" data-slides="1" data-slides-lg="1" data-slides-md="1" data-slides-sm="1" data-loop="true" data-auto="true">
-                    <div class="banner-slide">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-lg-4">
-                                    <h1>Bicycle Selling Exclusively <strong>Online</strong></h1>
-                                    <p>Praesent ut semper lacus. In turpis risusety bibendum dapibus eu sagittis id nisl uspendisse gravida.</p>
-                                    <a href="#" class="btn btn-blue btn-small">Start shopping</a>
-                                </div>
-                            </div>
-                            <img class="visual-left-right" src="assets/img/cycle.png" alt="dummy">
-                        </div>
-                    </div>
-                    <div class="banner-slide">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6">
-                                    <h1>Used Headphones Selling only on <strong>adspot</strong>.com</h1>
-                                    <p>Praesent ut semper lacus. In turpis risusety bibendum dapibus eu sagittis id nisl uspendisse gravida.</p>
-                                    <a href="#" class="btn btn-blue btn-small">Start shopping</a>
-                                </div>
-                            </div>
-                            <img class="visual-bottom-right" src="assets/img/headphones.png" alt="dummy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section white-bg">
-                <div class="container">
-                    <div class="category-thumbs clearfix style2">
-
-                        <div class="cat-thumb">
-                            <img src="assets/img/cat1a.jpg" alt="dummy">
-                            <a href="#">go to category</a>
-                            <div class="cat-caption">
-                                <div class="bg1">
-                                    <h3>Shop Vehicles</h3>
-                                </div>
-                            </div>
-                        </div><!--category-->
-
-                        <div class="cat-thumb">
-                            <img src="assets/img/cat2a.jpg" alt="dummy">
-                            <a href="#">go to category</a>
-                            <div class="cat-caption">
-                                <div class="bg3">
-                                    <h3>Shop Electronics</h3>
-                                </div>
-                            </div>
-                        </div><!--category-->
-
-                        <div class="cat-thumb">
-                            <img src="assets/img/cat3a.jpg" alt="dummy">
-                            <a href="#">go to category</a>
-                            <div class="cat-caption">
-                                <div class="bg4">
-                                    <h3>Shop Furniture</h3>
-                                </div>
-                            </div>
-                        </div><!--category-->
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="container">
-                    <header class="heading style2 text-center">
-                        <h2>Top Selling Items</h2>
-                        <p class="text-uppercase">Hand picked items</p>
-                    </header>
-                    <div class="shop-products clearfix">
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-1.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-2.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-3.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-4.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-5.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-6.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-7.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="shop-product">
-                            <div class="product-inner">
-                                <a href="shop-single.html" class="product-figure imgAsBg">
-                                    <img src="assets/img/items/list-item-8.png" alt="dummy">
-                                </a>
-                                <div class="product-content">
-                                    <a href="#" class="shop-cat">Mobile Phones</a>
-                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
-                                    <div>
-                                        <span class="product-price">$206.90</span>
-                                        <span class="the-ratings stars-5"></span>
-                                    </div>
-                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section blue-bg">
-
-                <div class="testimonial-slider style2">
-                    <div class="slick-carousel slick-testimonials dots-toRight" data-slides-scroll="1" data-dots="true" data-nav="false" data-prev="fa fa-chevron-left" data-next="fa fa-chevron-right" data-slides="1" data-slides-lg="1" data-slides-md="1" data-slides-sm="1" data-loop="true" data-auto="true">
-                        <blockquote>
-                            <q>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit lorem Ipsum proin gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis bibendum.</q>
-                            <cite>Gfx Partner</cite>
-                        </blockquote>
-                        <blockquote>
-                            <q>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit lorem Ipsum proin gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis bibendum.</q>
-                            <cite>Gfx Partner</cite>
-                        </blockquote>
-                        <blockquote>
-                            <q>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit lorem Ipsum proin gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis bibendum.</q>
-                            <cite>Gfx Partner</cite>
-                        </blockquote>
-                    </div>
+            <div class="container">
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li>About us</li>
+                    </ul>
                 </div>
 
-            </div>
-
-            <div class="section">
-                <div class="container">
+                <div class="cart-area">
                     <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <div class="text-widget">
-                                <div class="inner">
-                                    <h4>About Us</h4>
-                                    <p>Morbi ut tellus ac leo molestie luctus nec vehicula sed justo ut varius onec tempor rhoncus volutpat ras lorem.</p>
+                        <div class="col-xs-12 col-md-8">
+                            <div class="cart-items">
+                                <div class="cart-unit clearfix">
+                                    <div class="cart-item-info">
+                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-1.png" alt="dummy"></figure>
+                                        <h6>Apple Iphone 6S</h6>
+                                        <span>$206.90</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <div class="quantity-control">
+                                            <input title="quantity control" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
+                                            <div class="qty-btns">
+                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
+                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </div>
+                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cart-unit clearfix">
+                                    <div class="cart-item-info">
+                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-2.png" alt="dummy"></figure>
+                                        <h6>Apple Iphone 6S</h6>
+                                        <span>$206.90</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <div class="quantity-control">
+                                            <input title="title here" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
+                                            <div class="qty-btns">
+                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
+                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </div>
+                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cart-unit clearfix">
+                                    <div class="cart-item-info">
+                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-3.png" alt="dummy"></figure>
+                                        <h6>Apple Iphone 6S</h6>
+                                        <span>$206.90</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <div class="quantity-control">
+                                            <input title="title here" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
+                                            <div class="qty-btns">
+                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
+                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </div>
+                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cart-unit clearfix">
+                                    <div class="cart-item-info">
+                                        <figure class="imgAsBg"><img src="assets/img/items/list-item-4.png" alt="dummy"></figure>
+                                        <h6>Apple Iphone 6S</h6>
+                                        <span>$206.90</span>
+                                    </div>
+                                    <div class="cart-item-actions">
+                                        <div class="quantity-control">
+                                            <input title="title here" type="text" data-invalid="Enter valid quantity" data-maxalert="Maximum limit reached" data-max="10" data-minalert="Minimum limit reached" data-min="1" value="2">
+                                            <div class="qty-btns">
+                                                <button class="btn-cart btn-square btn-plus btn-qty"><i class="fa fa-caret-up"></i></button>
+                                                <button class="btn-cart btn-square btn-minus btn-qty"><i class="fa fa-caret-down"></i></button>
+                                            </div>
+                                        </div>
+                                        <a class="remove-cart-item" href="#"><i class="fa fa-close"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-4">
-                            <div class="text-widget">
-                                <div class="inner">
-                                    <h4>Sell Safely</h4>
-                                    <p>Morbi ut tellus ac leo molestie luctus nec vehicula sed justo ut varius onec tempor rhoncus volutpat ras lorem.</p>
+                            <div class="cart-summary">
+                                <div class="price-widget short-widget bg1">
+                                    <i class="adicon-dollar"></i>
+                                    <strong>$235.00</strong>
+                                    <span>Order Total</span>
+                                </div>
+                                <div class="cart-summary-table">
+                                    <table>
+                                        <tr>
+                                            <td>Sub Total</td>
+                                            <td>$827.60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sales Tax</td>
+                                            <td>19% Gross</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Discount</td>
+                                            <td>0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping</td>
+                                            <td>Free</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cart-summary-actions clearfix">
+                                    <a href="#" class="btn btn-transparent">Continue</a>
+                                    <a href="checkout.php" class="btn btn-green">Checkout</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="text-widget">
-                                <div class="inner">
-                                    <h4>Buy Safely</h4>
-                                    <p>Morbi ut tellus ac leo molestie luctus nec vehicula sed justo ut varius onec tempor rhoncus volutpat ras lorem.</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <footer class="doc-footer">
@@ -550,11 +414,12 @@
                     </ul>
                 </div>
                 <div class="text-center">
-                    &copy; ADSPOT - Classified
+                    &copy; Rent_a_lot - Classified
                 </div>
             </div>
         </footer>
     </div>
+
 
     <!--======================================
    Modals

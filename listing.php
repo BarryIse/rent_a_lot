@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>AdSpot - The Classified Web App</title>
+    <title>Rent_a_lot</title>
     <!--========================================
     Meta
     ===========================================-->
@@ -58,7 +58,7 @@
                 <div class="inner">
                     <div class="app-logo">
                         <button class="mobile-control mob-menu-trigger"><i class="adicon-hamburger"></i></button>
-                        <a href="index.html"><img src="assets/img/basic/logo.png" alt="adspot"></a>
+                        <a href="index.php"><img src="assets/img/basic/logo.png" alt="adspot"></a>
                     </div>
                     <ul class="quick-actions">
                         <li><a class="modal-trigger" href="#signInModal">Login</a></li>
@@ -93,14 +93,14 @@
                                             <td><strong>885.00 USD</strong></td>
                                         </tr>
                                     </table>
-                                    <a href="cart.html" class="btn btn-transparent block-element">View Cart</a>
+                                    <a href="cart.php" class="btn btn-transparent block-element">View Cart</a>
                                 </div>
                             </div>
                         </li>
                         <li><a class="nav-trigger" href="#"><i class="fa fa-navicon"></i></a></li>
                     </ul>
                     <div class="clearfix">
-                        <a href="create.html" class="btn btn-green pull-right quick-post">Post your ad</a>
+                        <a href="create.php" class="btn btn-green pull-right quick-post">Post your ad</a>
                         <div class="pull-right search-filters">
                             <div class="mega-dropdown pull-left">
                                 <button>Select City</button>
@@ -193,7 +193,7 @@
                                                     <li><a href="">Hair</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#"><i class="adicon-smile"></i>Fashion</a>
+                                            <li><a href="#"><i class="adicon-smile"></i>Baby products</a>
                                                 <ul>
                                                     <li><a href="">Stollers</a></li>
                                                     <li><a href="">Feeding</a></li>
@@ -220,19 +220,19 @@
             <a class="close-sliding-nav" href="#">Close nav</a>
             <nav class="slide-nav-list">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="create.html">Create Ad</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="create.php">Create Ad</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="terms.php">Terms</a></li>
                     <li class="parent">
                         <a  href="javascript:return;">Shop</a>
                         <ul>
-                            <li><a href="listing.html">Products</a></li>
-                            <li><a href="shop-index.html">Top Deals</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="listing.php">Products</a></li>
+                            <li><a href="shop-index.php">Top Deals</a></li>
+                            <li><a href="cart.php">Cart</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -246,14 +246,14 @@
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="create.html">Create an Ad</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="listing.html">Products</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="shop-index.html">Top Deals</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="create.php">Create an Ad</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="listing.php">Products</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
+                    <li><a href="shop-index.php">Top Deals</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+                    <li><a href="checkout.php">Checkout</a></li>
                 </ul>
             </div>
         </div>
@@ -334,7 +334,7 @@
                                         </a></li>
                                         <li><a href="#">
                                             <i></i>
-                                            <span>Apple</span>
+                                            <span>Iphone</span>
                                         </a></li>
                                         <li><a href="#">
                                             <i></i>
@@ -342,11 +342,11 @@
                                         </a></li>
                                         <li><a href="#">
                                             <i></i>
-                                            <span>Blackberry</span>
+                                            <span>Tecno</span>
                                         </a></li>
                                         <li><a href="#">
                                             <i></i>
-                                            <span>Sony Ericsson</span>
+                                            <span>Infinix</span>
                                         </a></li>
                                         <li><a href="#">
                                             <i></i>
@@ -354,7 +354,7 @@
                                         </a></li>
                                         <li><a href="#">
                                             <i></i>
-                                            <span>Motorola</span>
+                                            <span>Itel</span>
                                         </a></li>
                                     </ul>
                                 </div>
@@ -839,7 +839,7 @@
                     </ul>
                 </div>
                 <div class="text-center">
-                    &copy; ADSPOT - Classified
+                    &copy; Rent_a_lot - Classified
                 </div>
             </div>
         </footer>

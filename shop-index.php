@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
 
     <title>Rent_a_lot</title>
+    <!--========================================
+    Meta
+    ===========================================-->
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,6 +48,7 @@
     <!--put your custom css on the file below-->
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 
+
 </head>
 <body>
     <div class="web-app">
@@ -55,7 +58,7 @@
                 <div class="inner">
                     <div class="app-logo">
                         <button class="mobile-control mob-menu-trigger"><i class="adicon-hamburger"></i></button>
-                        <a href="index.html"><img src="assets/img/basic/logo.png" alt="adspot"></a>
+                        <a href="index.php"><img src="assets/img/basic/logo.png" alt="adspot"></a>
                     </div>
                     <ul class="quick-actions">
                         <li><a class="modal-trigger" href="#signInModal">Login</a></li>
@@ -90,14 +93,14 @@
                                             <td><strong>885.00 USD</strong></td>
                                         </tr>
                                     </table>
-                                    <a href="cart.html" class="btn btn-transparent block-element">View Cart</a>
+                                    <a href="cart.php" class="btn btn-transparent block-element">View Cart</a>
                                 </div>
                             </div>
                         </li>
                         <li><a class="nav-trigger" href="#"><i class="fa fa-navicon"></i></a></li>
                     </ul>
                     <div class="clearfix">
-                        <a href="create.html" class="btn btn-green pull-right quick-post">Post your ad</a>
+                        <a href="create.php" class="btn btn-green pull-right quick-post">Post your ad</a>
                         <div class="pull-right search-filters">
                             <div class="mega-dropdown pull-left">
                                 <button>Select City</button>
@@ -217,19 +220,19 @@
             <a class="close-sliding-nav" href="#">Close nav</a>
             <nav class="slide-nav-list">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="create.html">Create Ad</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="create.php">Create Ad</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="terms.php">Terms</a></li>
                     <li class="parent">
                         <a  href="javascript:return;">Shop</a>
                         <ul>
-                            <li><a href="listing.html">Products</a></li>
-                            <li><a href="shop-index.html">Top Deals</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="listing.php">Products</a></li>
+                            <li><a href="shop-index.php">Top Deals</a></li>
+                            <li><a href="cart.php">Cart</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -237,105 +240,251 @@
         </div>
         <div class="mobile-menu-wrap">
             <a href="#" class="closeMobilMenu">close the mobile menu</a>
-            <nav class="mobile-menu">
+            <div class="mobile-menu">
                 <div class="search-widget">
                     <input type="text" placeholder="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
                 <ul class="menu-list">
-                    <li><a href="create.html">Create an Ad</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="listing.html">Products</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="shop-index.html">Top Deals</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="create.php">Create an Ad</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="listing.php">Products</a></li>
+                    <li><a href="about.php">About us</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
+                    <li><a href="shop-index.php">Top Deals</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+                    <li><a href="checkout.php">Checkout</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
 
         <div class="app-canvas">
-            <div class="container">
-                <header class="heading big text-center">
-                    <h1>World’s <strong>Biggest</strong> Classified Marketplace</h1>
-                    <p class="text-uppercase">rent anything</p>
-                </header>
-                <div class="cat-boxes">
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-car bg1"></div>
-                            <span>vehicles</span>
+            <div class="banner-slider">
+                <div class="slick-carousel slick-shop-banner" data-slides-scroll="1" data-nav="false" data-dots="true" data-fade="true" data-slides="1" data-slides-lg="1" data-slides-md="1" data-slides-sm="1" data-loop="true" data-auto="true">
+                    <div class="banner-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-lg-4">
+                                    <h1>Bicycle Selling Exclusively <strong>Online</strong></h1>
+                                    <p>Praesent ut semper lacus. In turpis risusety bibendum dapibus eu sagittis id nisl uspendisse gravida.</p>
+                                    <a href="#" class="btn btn-blue btn-small">Start shopping</a>
+                                </div>
+                            </div>
+                            <img class="visual-left-right" src="assets/img/cycle.png" alt="dummy">
                         </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-tablet bg2"></div>
-                            <span>Mobiles</span>
+                    </div>
+                    <div class="banner-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <h1>Used Headphones Selling only on <strong>adspot</strong>.com</h1>
+                                    <p>Praesent ut semper lacus. In turpis risusety bibendum dapibus eu sagittis id nisl uspendisse gravida.</p>
+                                    <a href="#" class="btn btn-blue btn-small">Start shopping</a>
+                                </div>
+                            </div>
+                            <img class="visual-bottom-right" src="assets/img/headphones.png" alt="dummy">
                         </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-tv bg3"></div>
-                            <span>Electronics</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-sofa bg4"></div>
-                            <span>Furniture</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-briefcase bg5"></div>
-                            <span>catering equipments</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-buildings bg6"></div>
-                            <span>Repair tools</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-bell bg7"></div>
-                            <span>agriculture tools</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-hat bg8"></div>
-                            <span>books</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-dog bg9"></div>
-                            <span>sports</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-heal bg10"></div>
-                            <span>fashion</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-smile bg11"></div>
-                            <span>baby products</span>
-                        </div>
-                    </a>
-                    <a href="listing.html" class="cat-box">
-                        <div class="inner">
-                            <div class="adicon-hearts bg12"></div>
-                            <span>beauty</span>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
+            <div class="section white-bg">
+                <div class="container">
+                    <div class="category-thumbs clearfix style2">
+
+                        <div class="cat-thumb">
+                            <img src="assets/img/cat1a.jpg" alt="dummy">
+                            <a href="#">go to category</a>
+                            <div class="cat-caption">
+                                <div class="bg1">
+                                    <h3>Shop Vehicles</h3>
+                                </div>
+                            </div>
+                        </div><!--category-->
+
+                        <div class="cat-thumb">
+                            <img src="assets/img/cat2a.jpg" alt="dummy">
+                            <a href="#">go to category</a>
+                            <div class="cat-caption">
+                                <div class="bg3">
+                                    <h3>Shop Electronics</h3>
+                                </div>
+                            </div>
+                        </div><!--category-->
+
+                        <div class="cat-thumb">
+                            <img src="assets/img/cat3a.jpg" alt="dummy">
+                            <a href="#">go to category</a>
+                            <div class="cat-caption">
+                                <div class="bg4">
+                                    <h3>Shop Furniture</h3>
+                                </div>
+                            </div>
+                        </div><!--category-->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <header class="heading style2 text-center">
+                        <h2>Top Selling Items</h2>
+                        <p class="text-uppercase">Hand picked items</p>
+                    </header>
+                    <div class="shop-products clearfix">
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-1.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-2.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.html" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-3.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.php" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-4.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.php" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-5.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.php" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-6.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.php" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-7.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.php" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-product">
+                            <div class="product-inner">
+                                <a href="shop-single.html" class="product-figure imgAsBg">
+                                    <img src="assets/img/items/list-item-8.png" alt="dummy">
+                                </a>
+                                <div class="product-content">
+                                    <a href="#" class="shop-cat">Mobile Phones</a>
+                                    <h3><a href="shop-single.html">Apple iPhone 6S</a></h3>
+                                    <div>
+                                        <span class="product-price">$206.90</span>
+                                        <span class="the-ratings stars-5"></span>
+                                    </div>
+                                    <a href="cart.php" class="btn btn-transparent">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section blue-bg">
+
+                <div class="testimonial-slider style2">
+                    <div class="slick-carousel slick-testimonials dots-toRight" data-slides-scroll="1" data-dots="true" data-nav="false" data-prev="fa fa-chevron-left" data-next="fa fa-chevron-right" data-slides="1" data-slides-lg="1" data-slides-md="1" data-slides-sm="1" data-loop="true" data-auto="true">
+                        <blockquote>
+                            <q>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit lorem Ipsum proin gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis bibendum.</q>
+                            <cite>Gfx Partner</cite>
+                        </blockquote>
+                        <blockquote>
+                            <q>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit lorem Ipsum proin gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis bibendum.</q>
+                            <cite>Gfx Partner</cite>
+                        </blockquote>
+                        <blockquote>
+                            <q>Aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit lorem Ipsum proin gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis bibendum.</q>
+                            <cite>Gfx Partner</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="section">
                 <div class="container">
                     <div class="row">
@@ -343,23 +492,23 @@
                             <div class="text-widget">
                                 <div class="inner">
                                     <h4>About Us</h4>
-                                    <p>As a leading entity in oline rental services. We thrive to ensure the satisfaction of all parties.</p>
+                                    <p>Morbi ut tellus ac leo molestie luctus nec vehicula sed justo ut varius onec tempor rhoncus volutpat ras lorem.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <div class="text-widget">
                                 <div class="inner">
-                                    <h4>Rent Safely</h4>
-                                    <p>We guarantee the safety of your rented items.</p>
+                                    <h4>Sell Safely</h4>
+                                    <p>Morbi ut tellus ac leo molestie luctus nec vehicula sed justo ut varius onec tempor rhoncus volutpat ras lorem.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <div class="text-widget">
                                 <div class="inner">
-                                    <h4>How can we help</h4>
-                                    <p>You can lay any complains to our customers care services</p>
+                                    <h4>Buy Safely</h4>
+                                    <p>Morbi ut tellus ac leo molestie luctus nec vehicula sed justo ut varius onec tempor rhoncus volutpat ras lorem.</p>
                                 </div>
                             </div>
                         </div>
@@ -401,15 +550,15 @@
                     </ul>
                 </div>
                 <div class="text-center">
-                    &copy; ADSPOT - Classified
+                    &copy; Rent_a_lot - Classified
                 </div>
             </div>
         </footer>
     </div>
 
     <!--======================================
-    Modals
-    =======================================-->
+   Modals
+   =======================================-->
     <div id="signInModal" class="modal-container">
         <a href="#" class="modal-overlay"> click to close modal</a>
         <div class="inner">
@@ -481,7 +630,7 @@
                             <a href="#">Forgot Password?</a>
                         </div>
                     </div>
-                    
+
                     <button class="btn btn-md btn-green block-element">Login Now</button>
                     <div class="login-cta text-center">
                         <p>Don't have an account?</p>
@@ -575,10 +724,12 @@
         </div>
     </div>
 
+
     <!--========================================
     Javascript
     ===========================================-->
     <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/lib/slick-carousel/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
