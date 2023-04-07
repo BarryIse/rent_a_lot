@@ -1,213 +1,9 @@
-<?php include 'inc/header.php'; ?>
+<?php include 'inc/header.php'; 
+    $id = $_SESSION['id'];
+?>
 
 
-<body>
-    <div class="web-app">
 
-        <div class="doc-header">
-            <div class="container">
-                <div class="inner">
-                    <div class="app-logo">
-                        <button class="mobile-control mob-menu-trigger"><i class="adicon-hamburger"></i></button>
-                        <a href="index.php"><img src="assets/img/basic/logo.png" alt="adspot"></a>
-                    </div>
-                    <ul class="quick-actions">
-                        <li><a class="modal-trigger" href="#signInModal">Login</a></li>
-                        <li><a class="modal-trigger" href="#signUpModal">Register</a></li>
-                        <li class="dropdown-wrap wide">
-                            <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                            <div class="basic-dropdown wide">
-                                <div class="short-cart">
-                                    <ul>
-                                        <li>
-                                            <figure><img src="assets/img/items/list-item-1.png" alt="dummy"></figure>
-                                            <a href="#" class="item-title">Iphone 6 Plus 16GB</a>
-                                            <span>$229.00</span>
-                                            <a href="#" class="remove-item"><i class="fa fa-close"></i></a>
-                                        </li>
-                                        <li>
-                                            <figure><img src="assets/img/items/list-item-2.png" alt="dummy"></figure>
-                                            <a href="#" class="item-title">Iphone 6 Plus 16GB</a>
-                                            <span>$229.00</span>
-                                            <a href="#" class="remove-item"><i class="fa fa-close"></i></a>
-                                        </li>
-                                        <li>
-                                            <figure><img src="assets/img/items/list-item-3.png" alt="dummy"></figure>
-                                            <a href="#" class="item-title">Iphone 6 Plus 16GB</a>
-                                            <span>$229.00</span>
-                                            <a href="#" class="remove-item"><i class="fa fa-close"></i></a>
-                                        </li>
-                                    </ul>
-                                    <table>
-                                        <tr>
-                                            <td>Total Price</td>
-                                            <td><strong>885.00 USD</strong></td>
-                                        </tr>
-                                    </table>
-                                    <a href="cart.php" class="btn btn-transparent block-element">View Cart</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a class="nav-trigger" href="#"><i class="fa fa-navicon"></i></a></li>
-                    </ul>
-                    <div class="clearfix">
-                        <a href="create.php" class="btn btn-green pull-right quick-post">Post your ad</a>
-                        <div class="pull-right search-filters">
-                            <div class="mega-dropdown pull-left">
-                                <button>Select City</button>
-                                <i class="fa fa-navicon"></i>
-                                <div class="mega-content">
-                                    <div class="inner">
-                                        <div class="search-widget">
-                                            <input type="text" placeholder="search">
-                                            <button type="submit"><i class="fa fa-search"></i></button>
-                                        </div>
-
-                                        <div class="mega-list">
-                                            <header>
-                                                <i class="adicon-buildings"></i> Popular Cities
-                                            </header>
-                                            <ul class="clearfix">
-                                                <li><a href="#">South gate</a></li>
-                                                <li><a href="#">North gate</a></li>
-                                                <li><a href="#">Ilesha- garage</a></li>
-                                                <li><a href="#">Alagbaka</a></li>
-                                                <li><a href="#">Oja</a></li>
-                                                <li><a href="#">West gate</a></li>
-                                                <li><a href="#">Orita-Obele</a></li>
-                                                <li><a href="#">Cathedral</a></li>
-                                                <li><a href="#">Isinkan</a></li>
-                                                <li><a href="#">Custom</a></li>
-                                                <li><a href="#">Ijapo</a></li>
-                                                <li><a href="#">Ita-Oniyan</a></li>
-                                                <li><a href="#">Fanibi</a></li>
-                                                <li><a href="#">Awule</a></li>
-                                                <li><a href="#">Leo</a></li>
-                                                <li><a href="#">Road block</a></li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mega-filtered-search">
-                                <div class="mega-dropdown">
-                                    <button>Select Category</button>
-                                    <i class="fa fa-navicon"></i>
-                                    <div class="mega-content">
-                                        <ul class="category-list">
-                                            <li><a href="#"><i class="adicon-grid"></i>All Categories</a></li>
-                                            <li><a href="#"><i class="adicon-car"></i>Vehicles</a>
-                                                <ul>
-                                                    <li><a href="#">Cars</a></li>
-                                                    <li><a href="#">Motorcycles</a></li>
-                                                    <li><a href="#">Scooters</a></li>
-                                                    <li><a href="#">Bicycles</a></li>
-                                                    <li><a href="#">Spare Parts & Accessories</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#"><i class="adicon-tablet"></i>Mobiles</a>
-                                                <ul>
-                                                    <li><a href="#">Iphone</a></li>
-                                                    <li><a href="#">Samsung</a></li>
-                                                    <li><a href="#">Tecno</a></li>
-                                                    <li><a href="#">Infinix</a></li>
-                                                    <li><a href="#">Itel</a></li>
-                                                    <li><a href="#">Nokia</a></li>
-                                                    <li><a href="#">HTC</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#"><i class="adicon-tv"></i>Electronics</a>
-                                                <ul>
-                                                    <li><a href="#">Washing Machine</a></li>
-                                                    <li><a href="#">Television</a></li>
-                                                    <li><a href="#">Air conditioner</a></li>
-                                                    <li><a href="#">Computers and Laptops</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#"><i class="adicon-sofa"></i>Furniture</a>
-                                                <ul>
-                                                    <li><a href="#">Chairs</a></li>
-                                                    <li><a href="#">Tables</a></li>
-                                                    <li><a href="#">Bed</a></li>
-                                                    <li><a href="#">Desk</a></li>
-                                                    <li><a href="#">Cupboard</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#"><i class="adicon-heal"></i>Fashion</a>
-                                                <ul>
-                                                    <li><a href="">Clothes</a></li>
-                                                    <li><a href="">Shoes</a></li>
-                                                    <li><a href="">Bags</a></li>
-                                                    <li><a href="">Accessories</a></li>
-                                                    <li><a href="">Hair</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#"><i class="adicon-smile"></i>Baby products</a>
-                                                <ul>
-                                                    <li><a href="">Stollers</a></li>
-                                                    <li><a href="">Feeding</a></li>
-                                                    <li><a href="">baby bed</a></li>
-                                                    <li><a href="">Car seats</a></li>
-                                                    <li><a href="">Crib</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="search-widget">
-                                    <input type="text" placeholder="search">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="sliding-nav">
-            <a class="close-sliding-nav" href="#">Close nav</a>
-            <nav class="slide-nav-list">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="create.php">Create Ad</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="terms.php">Terms</a></li>
-                    <li class="parent">
-                        <a  href="javascript:return;">Shop</a>
-                        <ul>
-                            <li><a href="listing.html">Products</a></li>
-                            <li><a href="shop-index.html">Top Deals</a></li>
-                            <li><a href="cart.html">Cart</a></li>
-                            <li><a href="checkout.html">Checkout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="mobile-menu-wrap">
-            <a href="#" class="closeMobilMenu">close the mobile menu</a>
-            <nav class="mobile-menu">
-                <div class="search-widget">
-                    <input type="text" placeholder="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
-                <ul class="menu-list">
-                    <li><a href="create.php">Create an Ad</a></li>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="listing.php">Products</a></li>
-                    <li><a href="about.php">About us</a></li>
-                    <li><a href="contact.php">Contact us</a></li>
-                    <li><a href="shop-index.php">Top Deals</a></li>
-                    <li><a href="cart.php">Cart</a></li>
-                    <li><a href="checkout.php">Checkout</a></li>
-                </ul>
-            </nav>
-        </div>
 
         <div class="app-canvas">
             <div class="container">
@@ -368,9 +164,9 @@
         <a href="#" class="modal-overlay"> click to close modal</a>
         <div class="inner">
             <button class="close_modal"><i class="fa fa-remove"></i></button>
-            <div class="social_login_opt">
+          <!--  <div class="social_login_opt">
                 <div>
-                    <div class="opt-navigator dropdown-wrap">
+                    <div class="opt-navigator dropdown-wrap">1
                         <button>open options</button>
                         <div class="basic-dropdown">
                             <ul class="social-drop-list">
@@ -405,13 +201,13 @@
                     </div>
                 </div>
                 <span class="split-opt">or</span>
-            </div>
+            </div> -->
             <div class="modal-content">
                 <header>
                     <h4>Welcome Back!</h4>
                     <p>Please enter your details below</p>
                 </header>
-                <form action="http://gfxpartner.com/">
+                <form method="post">
                     <div class="field-block">
                         <div class="labeled-input">
                             <label>Username</label>
@@ -436,7 +232,7 @@
                         </div>
                     </div>
                     
-                    <button class="btn btn-md btn-green block-element">Login Now</button>
+                    <button class="btn btn-md btn-green block-element" name="login" type="submit">Login Now</button>
                     <div class="login-cta text-center">
                         <p>Don't have an account?</p>
                         <a href="#">Register here FREE</a>
@@ -445,11 +241,14 @@
             </div>
         </div>
     </div>
-    <div id="signUpModal" class="modal-container">
+
+   <!-- <div id="signUpModal" class="modal-container">
         <a href="#" class="modal-overlay"> click to close modal</a>
         <div class="inner">
             <button class="close_modal"><i class="fa fa-remove"></i></button>
-            <div class="social_login_opt">
+            
+            <!--Social media register-->
+            <!--<div class="social_login_opt">
                 <div>
                     <div class="opt-navigator dropdown-wrap">
                         <button>open options</button>
@@ -486,40 +285,75 @@
                     </div>
                 </div>
                 <span class="split-opt">or</span>
-            </div>
-            <div class="modal-content">
+            </div>-->
+
+            <!--Register page-->
+         <!--   <div class="modal-content">
                 <header>
-                    <h4>Welcome Back!</h4>
+                    <h4>Welcome!</h4>
                     <p>Please enter your details below</p>
                 </header>
-                <form action="http://gfxpartner.com/">
+                <form action="" method="POST">
                     <div class="field-block">
                         <div class="labeled-input">
-                            <label>Username</label>
-                            <input title="Enter your username" type="text">
+                            <label>First Name</label>
+                            <input name="firstname" title="Enter your first name" type="text">
+                            <?= $firstnameErr ?? NULL?>
                         </div>
                     </div>
                     <div class="field-block">
                         <div class="labeled-input">
-                            <label>Password</label>
-                            <input title="Enter your password" type="password">
+                            <label>Last Name</label>
+                            <input name="lastname" title="Enter your last name" type="text">
+                            <?= $lastnameErr ?? Null?>
+                        </div>
+                    </div>
+                    <div class="field-block">
+                        <div class="labeled-input">
+                            <label>Username</label>
+                            <input name="username" title="Enter your username" type="text">
+                            <?= $usernameErr ?? Null?>
                         </div>
                     </div>
                     <div class="field-block">
                         <div class="labeled-input">
                             <label>Email address</label>
-                            <input title="Enter your email address" type="email">
+                            <input name="email" title="Enter your email" type="email">
+                            <?= $emailErr ?? Null?>
                         </div>
                     </div>
                     <div class="field-block">
+                        <div class="labeled-input">
+                            <label>Password</label>
+                            <input name="password" title="Enter your password" type="password">
+                            <div style="color:red; text-align:left;"></div>
+                            <?php if(!empty($errors)){ ?>
+                            <ul>
+                            <?php foreach($errors as $error){ ?>
+			                <li><?=$error ?></li>
+		                    <?php } ?>
+                            </ul>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="field-block">
+                        <div class="labeled-input">
+                            <label>Confirm your password</label>
+                            <input name="confirm_password" title="Confirm your password" type="password">
+                            <div style="color:red; text-align:left;"></div>
+                            <?= $confirmPasswordErr ?? NULL?>
+                        </div>
+                    </div>
+                    
+                    <div class="field-block">
                         <div class="icon-field">
                             <span>+234</span>
-                            <input type="text" placeholder="Your phone number">
+                            <input name="phonenumber" type="tel" placeholder="Enter your phone number">
                         </div>
                     </div>
 
 
-                    <button class="btn btn-md btn-green block-element">Signup Now</button>
+                    <input type="submit" name="submit" value="Signup Now" class="btn btn-md btn-green block-element">
                     <div class="login-cta text-center"><br>
                         By clicking Signup Now, you agree to <br>
                         <a href="#">our Terms</a> and <a href="#">Privacy Policy</a>.
@@ -527,7 +361,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--========================================
     Javascript
@@ -536,4 +370,3 @@
     <script src="assets/js/app.js"></script>
 
 </body>
-</html>
