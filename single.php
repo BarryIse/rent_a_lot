@@ -423,7 +423,7 @@ $img = explode(', ', $result['image'])
                                 $year = explode('-', $person['created']);
                             ?>
                             <div class="user-widget text-center">
-                                <img src="uploads/<?= $person['image']?>" style="border-radius: 50%; height:50px; width:100px" alt="asd">
+                                <img src="uploads/<?= $person ['image']?>" style="border-radius: 50%; height:50px; width:100px" alt="asd">
                                 <h4><?= $person['firstname'].' '.$person['lastname']?></h4>
                                 <div>Member Since <?= $year[0]?></div>
                                 <a href="#" class="link">More Ads</a>

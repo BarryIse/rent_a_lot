@@ -27,12 +27,12 @@
       <div class="main-user-info">
         <div class="user-input-box">
           <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Enter Full Name" />
+          <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" />
           <div style="color:red"><?= $firstnameErr ?? NULL?></div>
         </div>
         <div class="user-input-box">
           <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Enter Full Name" />
+          <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" />
         </div>
         <div class="user-input-box">
           <label for="username">Username</label>
