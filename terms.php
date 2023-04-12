@@ -267,7 +267,7 @@
                             <div class="text-widget">
                                 <div class="inner">
                                     <h4>Our Address</h4>
-                                    <p>south gate.</p>
+                                    <p>As a leading entity in the online rental services, We thrive to ensure satisfaction of all parties.</p>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +275,7 @@
                             <div class="text-widget">
                                 <div class="inner">
                                     <h4>Contact info</h4>
-                                    <p>when we buy phones from your money.</p>
+                                    <p>As a leading entity in the online rental services, We thrive to ensure satisfaction of all parties.</p>
                                 </div>
                             </div>
                         </div>

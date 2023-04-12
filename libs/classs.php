@@ -178,26 +178,30 @@ class Project
         }
         
         if(empty($conditionErr) && empty($cityErr)){
-            if(!empty($_FILES['image']['name'])){
-                $allowedExt = ['png', 'jpg', 'jpeg'];
-                $fileName = $_FILES['image']['name'];
-                $fileSize = $_FILES['image']['size'];
-                $fileTmp = $_FILES['image']['tmp_name'];
-                $targetDir = "ads/$fileName";
-                $fileExt = explode('.', $fileName);
-                $fileExt = strtolower(end($fileExt));
-                if(in_array($fileExt, $allowedExt)){
-                    if($fileSize < 1000000){
-                        move_uploaded_file($fileTmp, $targetDir);
-                        $sql = $conn->query("INSERT INTO ads (title, category, adCondition, price, city, description, name, email, phonenumber, featuredAd, image) VALUES ('$title', '$category', '$condition', '$price', '$city', '$description', '$name', '$email', '$phonenumber', '$featuredAd', '$fileName')");
-                        $created = '<div style="color:white; background-color: green; font-size:24px; padding:5px 20px; width:fit-content; text-align:center;">Ad Successfully Submitted for review!</div>';
-                        
+            if(!empty(array_filter($_FILES['image']['name']))){
+                foreach($_FILES['image']['tmp_name'] as $key => $value){
+                    $allowedExt = ['png', 'jpg', 'jpeg'];
+                    $fileName = $_FILES['image']['name'][$key];
+                    $fileSize = $_FILES['image']['size'][$key];
+                    $fileTmp = $_FILES['image']['tmp_name'][$key];
+                    $targetDir = "ads/$fileName";
+                    $fileExt = explode('.', $fileName);
+                    $fileExt = strtolower(end($fileExt));
+                    if(in_array($fileExt, $allowedExt)){
+                        if($fileSize < (2*1024*1024)){
+                            move_uploaded_file($fileTmp, $targetDir);
+                            $images[] = $fileName;
+                            $img = implode(', ', $images);
+                            $created = '<div style="color:white; background-color: green; font-size:24px; padding:5px 20px;     width:fit-content; text-align:center;">Ad Successfully Submitted for review!</div>';
+
+                        }else{
+                            $imageErr = 'File is too large';
+                        }
                     }else{
-                        $imageErr = 'File is too large';
+                        $imageErr = 'Invalid file type';
                     }
-                }else{
-                    $imageErr = 'Invalid file type';
                 }
+                $sql = $conn->query("INSERT INTO ads (title, category, adCondition, price, city, description, name, email, phonenumber, featuredAd, image) VALUES ('$title', '$category', '$condition', '$price', '$city', '$description', '$name', '$email', '$phonenumber', '$featuredAd', '$img')");
             }
             
         }

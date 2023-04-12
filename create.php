@@ -64,6 +64,7 @@ $result = $sql->fetch_assoc();
                                                                     <li><a class="category">Itel</a></li>
                                                                     <li><a class="category">Nokia</a></li>
                                                                     <li><a class="category">HTC</a></li>
+                                                                    <li><a class="category">Other Mobiles</a></li>
                                                                 </ul>
                                                             </li>
                                                             <li><a><i class="adicon-tv"></i>Electronics</a>
@@ -72,6 +73,7 @@ $result = $sql->fetch_assoc();
                                                                     <li><a class="category">Television</a></li>
                                                                     <li><a class="category">Air conditioner</a></li>
                                                                     <li><a class="category">Computers and Laptops</a></li>
+                                                                    <li><a class="category">Other Electronics</a></li>
                                                                 </ul>
                                                             </li>
                                                             <li><a><i class="adicon-sofa"></i>Furniture</a>
@@ -81,6 +83,7 @@ $result = $sql->fetch_assoc();
                                                                     <li><a class="category">Bed</a></li>
                                                                     <li><a class="category">Desk</a></li>
                                                                     <li><a class="category">Cupboard</a></li>
+                                                                    <li><a class="category">Other Furnitures</a></li>
                                                                 </ul>
                                                             </li>
                                                             <li><a><i class="adicon-heal"></i>Fashion</a>
@@ -90,6 +93,7 @@ $result = $sql->fetch_assoc();
                                                                     <li><a class="category">Bags</a></li>
                                                                     <li><a class="category">Accessories</a></li>
                                                                     <li><a class="category">Hair</a></li>
+                                                                    <li><a class="category">Other Fashions</a></li>
                                                                 </ul>
                                                             </li>
                                                             <li><a><i class="adicon-smile"></i>Baby products</a>
@@ -99,6 +103,7 @@ $result = $sql->fetch_assoc();
                                                                     <li><a class="category">baby bed</a></li>
                                                                     <li><a class="category">Car seats</a></li>
                                                                     <li><a class="category">Crib</a></li>
+                                                                    <li><a class="category">Other Baby Products</a></li>
                                                                 </ul>
                                                             </li>
                                                         </ul>
@@ -112,7 +117,7 @@ $result = $sql->fetch_assoc();
                                             <label class="required" for="create001">Image</label>
                                         </div>
                                         <div class="col-xs-12 col-md-9">
-                                            <input type="file" name="image" required>
+                                            <input type="file" name="image[]" required multiple>
                                         </div>
                                         <div style="color:red"><?= $imageErr ?? null;?></div>
                                     </div>

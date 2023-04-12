@@ -13,11 +13,11 @@ $result = $sql->fetch_assoc();
                         <div class="uzr-sidebar">
                             <div class="dp-widget">
                                 <form method="POST" enctype="multipart/form-data">
-                                    <input type="file" name="image">
+                                    <input class="d-none" hidden id="update" type="file" name="image">
                                     <button type="submit" name="upload"><i class="fa fa-camera"></i>Upload Photo</button>
                                 </form>
                                 <div style="color:red"><?= $imageErr ?? NULL;?></div>
-                                <img src="uploads/<?= $result['image']?>" style="max-height: 300px;" alt="user">
+                                <label for="update"><img src="uploads/<?= $result['image']?>" style="max-height: 300px;" alt="user"></label>
                             </div>
                             <div class="nt-tab-triggers">
                                 <ul data-target="#tabs-dashboard-01">

@@ -1,4 +1,6 @@
-<?php include 'inc/header.php'; ?>
+<?php include 'inc/header.php'; 
+$sql = $conn->query("SELECT * FROM ads ORDER BY created DESC");
+?>
 
 
 
@@ -172,379 +174,49 @@
 
                     </div>
                     <div id="items-listing-area" class="items-list">
-                        <article class="item-spot featured">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-1.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
+                        <?php foreach($sql as $list): $img = explode(', ', $list['image'])?>
+                            <article class="item-spot featured">
+                                <a href="single.php?id=<?= $list['id']?>" class="imgAsBg">
+                                    <img src="ads/<?= $img[0]?>" style="height: 300px" alt="dummy data">
+                                </a>
+                                <div class="item-content">
+                                    <header>
+                                        <h4><a href="single.html"><?= $list['title']?></a></h4>
+                                        <div class="breadcrumb">
+                                            <ul>
+                                                <li><a href="#">Mobile Phones</a></li>
+                                                <li><a href="#"><?= $list['category']?></a></li>
+                                            </ul>
+                                        </div>
+                                        <ul class="item-info">
+                                            <li><i class="fa fa-map-marker"></i><a href="#"><?= $list['city']?></a></li>
+                                            <li><i class="fa fa-clock-o"></i><?= $list['created']?></li>
                                         </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-2.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
+                                    </header>
+                                    <div class="item-actions text-center">
+                                        <ul class="contact-options">
+                                            <li><a href="#" class="fa fa-envelope tooltip-parent">
+                                                <span class="tooltip">Send Message</span>
+                                            </a></li>
+                                            <li><a href="#" class="fa fa-phone tooltip-parent">
+                                                <span class="tooltip">Mobile Number</span>
+                                            </a></li>
+                                            <li><a href="#" class="fa fa-heart tooltip-parent">
+                                                <span class="tooltip">save ad</span>
+                                            </a></li>
                                         </ul>
+                                        <div class="price-tag">$<?= $list['price']?></div>
                                     </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-3.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
+                                    <div class="inner">
+                                        <p>
+                                        <?= $list['description']?>
+                                        </p>
+                                        <a class="view-item" href="single.php?id=<?= $list['id']?>">view ad</a>
                                     </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
                                 </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-4.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-5.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-6.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-7.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-8.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="item-spot">
-                            <a href="single.html" class="imgAsBg">
-                                <img src="assets/img/items/list-item-5.png" alt="dummy data">
-                            </a>
-                            <div class="item-content">
-                                <header>
-                                    <h4><a href="single.html">Canon SX Powershot A Great D-SLR</a></h4>
-                                    <div class="breadcrumb">
-                                        <ul>
-                                            <li><a href="#">Mobile Phones</a></li>
-                                            <li><a href="#">Apple</a></li>
-                                        </ul>
-                                    </div>
-                                    <ul class="item-info">
-                                        <li><i class="fa fa-map-marker"></i><a href="#">Melbourne</a></li>
-                                        <li><i class="fa fa-clock-o"></i>2:49 pm</li>
-                                    </ul>
-                                </header>
-                                <div class="item-actions text-center">
-                                    <ul class="contact-options">
-                                        <li><a href="#" class="fa fa-envelope tooltip-parent">
-                                            <span class="tooltip">Send Message</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-phone tooltip-parent">
-                                            <span class="tooltip">Mobile Number</span>
-                                        </a></li>
-                                        <li><a href="#" class="fa fa-heart tooltip-parent">
-                                            <span class="tooltip">save ad</span>
-                                        </a></li>
-                                    </ul>
-                                    <div class="price-tag">$206.90</div>
-                                </div>
-                                <div class="inner">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adiscing das elited ultricies facilisis lacinia pell ...
-                                    </p>
-                                    <a class="view-item" href="single.html">view ad</a>
-                                </div>
-                            </div>
-                        </article>
-
-
+                            </article>
+                        <?php endforeach; ?>
                     </div>
-
                 </div>
             </div>
         </div>
